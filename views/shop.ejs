@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include(`${partialPath}/partials/head.ejs`)%>
+<body>
+    <%- include(`${partialPath}/partials/nav.ejs`)%>
+    <h1 style="text-align: center">Enjoy your shopping!</h1>
+    <div class="container">
+        <div class="shopping">
+            <div class="box">
+                <img class="product" src="images/img/product1.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Black Adidas Shirt! || $50
+                    </p>
+                    <button class="button" onclick="cartOpen(1)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product2.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Black Adidas Earbuds! || $20
+                    </p>
+                    <button class="button" onclick="cartOpen(2)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product3.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Black Originals Jacket ! || $80
+                    </p>
+                    <button class="button" onclick="cartOpen(3)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product4.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Black Adidas Bottle! || $30
+                    </p>
+                    <button class="button" onclick="cartOpen(4)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product5.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Cool Sunglasses! || $15
+                    </p>
+                    <button class="button" onclick="cartOpen(5)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product6.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Black Adidas Cap! || $15
+                    </p>
+                    <button class="button" onclick="cartOpen(6)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product7.jpg">
+                <div class="product-detail">
+                    <p class="product-text">
+                        Pure Canvas Bag! || $100
+                    </p>
+                    <button class="button" onclick="cartOpen(7)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="product" src="images/img/product8.jpg">
+                <div  class="product-detail">
+                    <p class="product-text">
+                        Running Shoes! || $200
+                    </p>
+                    <button class="button" onclick="cartOpen(8)" type="Submit">Add to Cart!</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-hidden">
+            <h3>Your Cart</h3>
+            <button style=" background-color:black; color:red; border:0;" onclick="closeButton()" class="button">X</button>
+            <div class="cart-items">
+                    <div style="display:none" class="cart-div" id="changing-div1">
+                        <img style=" height:200px; width:200px;" id="changing-image1" src="images/img/product1.jpg">
+                        <span  class="cart-text" >Black Adidas Shirt</span><span id="changing-number1">$50</span><br>
+                        <input type="number" id="pr1" placeholder="1" min="1" onclick="keepCheck(1)"><br><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div2">
+                        <img style=" height:200px; width:200px;" id="changing-image2" src="images/img/product2.jpg">
+                        <span  class="cart-text">Black Adidas Earbuds</span><span id="changing-number2">$20</span><br>
+                        <input type="number" id="pr2" placeholder="1" min="1" onclick="keepCheck(2)"><br><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div3">
+                        <img style=" height:200px; width:200px;" id="changing-image3" src="images/img/product3.jpg">
+                        <span  class="cart-text">Black Originals Jacket</span><span id="changing-number3">$80</span><br>
+                        <input type="number" id="pr3" placeholder="1" min="1" onclick="keepCheck(3)"><br><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div4">
+                        <img style=" height:200px; width:200px;" id="changing-image4" src="images/img/product4.jpg">
+                        <span  class="cart-text">Black Adidas Bottle</span><span id="changing-number4">$30</span><br>
+                        <input type="number" id="pr4" placeholder="1" min="1" onclick="keepCheck(4)"><br><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div5">
+                        <img style=" height:200px; width:200px;" id="changing-image5" src="images/img/product5.jpg">
+                        <span  class="cart-text">Cool Sunglasses</span><span id="changing-number5">$15</span><br>
+                        <input type="number" id="pr5" placeholder="1" min="1" onclick="keepCheck(5)"><br><hr><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div6">
+                        <img style=" height:200px; width:200px;" id="changing-image6" src="images/img/product6.jpg">
+                        <span  class="cart-text">Black Adidas Cap</span><span id="changing-number6">$15</span><br>
+                        <input type="number" id="pr6" placeholder="1" min="1" onclick="keepCheck(6)"><br><hr><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div7">
+                        <img style=" height:200px; width:200px;" id="changing-image7" src="images/img/product7.jpg">
+                        <span  class="cart-text">Pure Canvas Bag</span><span id="changing-number7">$100</span><br>
+                        <input type="number" id="pr7" placeholder="1" min="1" onclick="keepCheck(7)"><br><hr><hr>
+                    </div>
+                    <div style="display:none" class="cart-div" id="changing-div8">
+                        <img style=" height:200px; width:200px;" id="changing-image8" src="images/img/product8.jpg">
+                        <span  class="cart-text">Running Shoes</span><span id="changing-number8">$200</span>
+                        <br>
+                        <input type="number" id="pr8" placeholder="1" min="1" onclick="keepCheck(8)"><hr>
+                    </div>
+            </div>
+            <div>
+                <h4 id="total">
+                    Total = 0
+                </h4>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
