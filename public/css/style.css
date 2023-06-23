@@ -1,0 +1,135 @@
+body {
+  /* background-image: linear-gradient(rgb(46, 33, 118), rgb(45, 146, 99)); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #41afc5;
+  }
+
+  .active {
+    background-color: #41afc5;
+  }
+
+#header-image{
+  height : 75vh;
+  width: 90vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  right: 4.4vw;
+}
+.search-image{
+  position: relative;
+}
+
+.shopping{
+  display:flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+
+}
+.box{
+  /* background-color: purple; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 50vh;
+  width: 30vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  /* cursor: pointer; */
+}
+
+.product{
+  width: 30vw;
+  height: 40vh;
+}
+
+.product-detail{
+  /* text-align: center; */
+  padding: 2px 16px;
+
+}
+
+.product-text{
+  display:inline;
+}
+
+.button{
+  float:right;
+  background-color: green;
+  border: solid green;
+  color:white;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor:pointer;
+}
+
+.button:hover{
+  background-color: white;
+  border: 2px solid green;
+  color: black;
+}
+
+.cart-hidden{
+  overflow-y: scroll;
+  display:none;
+  /* visibility: hidden; */
+  /* background-color: purple; */
+  position: sticky;
+  top:0;
+  right:0;
+  width:100vw;
+  height:100vh;
+  padding:20px;
+  background: var(--bg-color);
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  border: 2px solid black;
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+}
+
+/* .cart-text{
+  display:none;
+} */
