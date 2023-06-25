@@ -14,5 +14,9 @@
     "ECommerce-Frontend-Website"
   ],
   "author": "hidingbehindrainbows",
-  "license": "ISC"
+  "license": "ISC",
+    "dependencies": {
+    "ejs": "9.5.1",
+    "express": "9.5.1"
+  }
 }
