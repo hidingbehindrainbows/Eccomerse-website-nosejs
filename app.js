@@ -6,7 +6,9 @@ const path = require('path');
 
 const app = express();
 
-app.listen(3000);
+const port = 3000
+// app.listen(3000);
+app.listen(process.env.PORT || port, () => console.log("Listening on PORT"));
 const partialPath = `${__dirname}` ;
 console.log(partialPath);
 
