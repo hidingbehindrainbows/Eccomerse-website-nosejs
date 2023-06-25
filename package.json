@@ -4,7 +4,7 @@
   "description": "An ECommerce Website utilizing a simple Node.js Backend. It is mainly a front-end website.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +17,8 @@
   "author": "hidingbehindrainbows",
   "license": "ISC",
   "dependencies": {
-    "ejs":"^3.1.5",
+    "ejs":"^3.1.5",    
+    "http": "0.0.0",
     "express":"^4.17.1"
   },
   "devDependencies":{
