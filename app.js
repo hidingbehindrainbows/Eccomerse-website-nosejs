@@ -10,13 +10,13 @@ const port = 3000
 // app.listen(3000);
 app.listen(process.env.PORT || port, () => console.log("Listening on PORT"));
 const partialPath = `${__dirname}` ;
-console.log(partialPath);
-
+// console.log(partialPath);
+app.engine('html', require('ejs').renderFile);
 app.set(`view engine`, `ejs`);
 app.set(`views`, path.join(__dirname, `views`));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname, 'public'));
 
-console.log(`Running`);
+// console.log(`Running`);
 
 app.get(`/`, (req, res)=>{
     res.render(`homepage`, {title: "Homepage", partialPath});
