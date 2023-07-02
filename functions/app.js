@@ -35,7 +35,7 @@ app.get(`/about/`, (req, res)=>{
     res.redirect(`/about`)
 });
 
-app.use(('/.netlify/functions/api', router)); 
+app.use(('/.netlify/functions/app', router)); 
 // {
 //     res.render(`404`, {title: "404 Not Found", partialPath});
 // });
