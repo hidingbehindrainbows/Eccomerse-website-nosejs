@@ -4,7 +4,7 @@
   "description": "An ECommerce Website utilizing a simple Node.js Backend. It is mainly a front-end website.",
   "main": "index.js",
   "scripts": {
-    "build": "netlify deploy --prod"
+    "build": "npm run build"
   },
   "repository": {
     "type": "git",
